@@ -87,6 +87,7 @@ int software_automatic_ear(std::string input_file, uint16_t block_size) {
                 << ": "
                 << mpark::visit(FeatureDataAsString{}, i.second)
                 << std::endl;
+    delete fe;
   }
 
   return 0;
